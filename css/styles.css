@@ -1,0 +1,18 @@
+* {
+    font-family: 'poppins' , sans-serif;
+}
+
+.banner {
+    background-image: url(/portfolio/images/slides.avif);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    padding: 250px;
+}
+
+.skills-padding {
+    padding: 80px 0px;
+}
+
+
+
+
