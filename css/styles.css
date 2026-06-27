@@ -6,13 +6,47 @@
     background-image: url(../images/background.png);
     background-size: cover ;
     background-repeat: no-repeat;
-    padding: 250px;
+    padding: 120px 20px;
 }
+
+.banner h1{
+         font-size: clamp(2rem, 5vw, 4rem);
+         width: 100%;
+         white-space: normal;
+         word-break: normal;
+}
+
+.banner h4{
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.6;
+    width: 100%;
+    white-space: normal;
+    word-break: normal
+}
+
 
 .skills-padding {
     padding: 80px 0px;
 }
 
+@media (max-width: 570px){
+    .banner{
+        padding: 60px 15px;
+    }
+
+    .banner h1{
+        font-size: 32px;
+    }
+
+    .banner h4{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .button{
+        width:auto
+    }
+}
 
 
 
