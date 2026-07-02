@@ -1,27 +1,24 @@
 * {
     font-family: 'poppins' , sans-serif;
 }
-
+ 
 .banner {
      background-image: url(../images/background.png);
      background-size: cover;
      background-repeat:no-repeat;
-     padding: 120px 20px;
+     padding: 300px 20px 250px;
+     position: relative;
+     overflow: hidden;
+     min-height: 600px;
 }    
- 
+
 .banner h1{
-         font-size: clamp(2rem, 5vw, 4rem);
-         width: 100%;
-         white-space: normal;
-         word-break: normal;
+    font-size: clamp(2.5rem,6vw,4.5rem);
 }
 
 .banner h4{
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem,2vw,1.4rem);
     line-height: 1.6;
-    width: 100%;
-    white-space: normal;
-    word-break: normal
 }
 
 
@@ -29,24 +26,348 @@
     padding: 80px 0px;
 }
 
-@media (max-width: 570px){
-    .banner{
-        padding: 60px 15px;
+.table img {
+    width: 100%;
+    display: block;
+    animation: tablemove 0.8s ease-out forwards 0s ;
+}
+
+.table {
+    position:absolute;
+    width: 100%;
+    bottom: -5px;
+    left:0;
+    z-index: 1;
+    animation-delay: 0s;
+}
+
+@keyframes tablemove {
+    from{
+        transform: translatex(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.flowercup img {
+    width: 100%;
+    display: block;
+    animation: flowercupentry 1s ease-out forwards  ;
+}
+
+.flowercup {
+    position:absolute;
+    left: -14%;
+    bottom: 25px;
+    width: 35%;
+    z-index: 15;
+    animation-delay: 0.5s;
+}
+
+@keyframes flowercupentry {
+    from{
+        transform: translatex(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.teacup img {
+    width: 100%;
+    display: block;
+    animation: teacupentry 1.5s ease-out forwards  ;
+}
+
+.teacup {
+    position:absolute;
+    left: 3%;
+    bottom: 60px;
+    width: 20%;
+    z-index: 14;
+    animation-delay: 1s;
+}
+
+@keyframes teacupentry {
+    from{
+        transform: translatex(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+.nidle img {
+    width: 100%;
+    display: block;
+    animation: nidleentry 1.8s ease-out forwards ;
+}
+
+.nidle {
+    position: absolute;
+    right: -8%;
+    bottom: 90px;
+    width: 23%;
+    z-index: 30;
+    animation-delay: 2.5s;
+}
+
+@keyframes nidleentry {
+    from{
+        transform: translatex(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+
+.lap  {
+    width: 100%;
+    display: block;
+    position: relative;
+   
+}
+
+.laptop{
+    position:absolute;
+    right:5%;
+    bottom:50px;
+    width:45%;
+    z-index: 20;
+    overflow: visible;
+    animation: laptopEntry 2.3s ease-out forwards ;
+    animation-delay: 0.1s;
+}
+
+@keyframes laptopEntry{
+
+    0%{
+        opacity:0;
+        transform:translateX(250px);
     }
 
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+.skill{
+
+    position:absolute;
+
+    width:38px;
+
+    opacity:0;
+
+    z-index: 50;
+
+    animation-fill-mode: backwards;
+
+}
+
+.html{
+    left:55%;
+    top:42%;
+    animation: htmlPop 4s infinite;
+    animation-delay: 1.3s;
+}
+
+@keyframes htmlPop{
+    0%{opacity:0; transform:translate(0,0) scale(.2);}
+    20%{opacity:1;}
+    100%{opacity:0; transform:translate(-120px,-120px) scale(1);}
+}
+
+.css{
+    left:58%;
+    top:48%;
+    animation: cssPop 4s infinite;
+    animation-delay: 1.5s;
+    
+}
+
+@keyframes cssPop{
+    0%{opacity:0; transform:translate(0,0) scale(.2);}
+    20%{opacity:1;}
+    100%{opacity:0; transform:translate(0,-160px) scale(1);}
+}
+
+.js{
+    left:60%;
+    top:45%;
+    animation: jsPop 4s infinite;
+    animation-delay: 1.8s;
+}
+
+@keyframes jsPop{
+    0%{opacity:0; transform:translate(0,0) scale(.2);}
+    20%{opacity:1;}
+    100%{opacity:0; transform:translate(130px,-110px) scale(1);}
+}
+
+.bs{
+    left:52%;
+    top:50%;
+    animation: bsPop 4s infinite;
+    animation-delay: 2.1s;
+}
+
+@keyframes bsPop{
+    0%{opacity:0; transform:translate(0,0) scale(.2);}
+    20%{opacity:1;}
+    100%{opacity:0; transform:translate(150px,-40px) scale(1);}
+}
+
+.git{
+    left:57%;
+    top:50%;
+    animation: gitPop 4s infinite;
+    animation-delay: 2.4s;
+}
+
+@keyframes gitPop{
+    0%{opacity:0; transform:translate(0,0) scale(.2);}
+    20%{opacity:1;}
+    100%{opacity:0; transform:translate(-150px,-40px) scale(1);}
+}
+
+.juqery{
+    left:63%;
+    top:46%;
+    animation: jqueryPop 4s infinite;
+    animation-delay: 2.6s;
+}
+
+@keyframes jqueryPop{
+    0%{opacity:0; transform:translate(0,0) scale(.2);}
+    20%{opacity:1;}
+    100%{opacity:0; transform:translate(60px,-180px) scale(1);}
+}
+
+.book img {
+    width: 100%;
+    display: block;
+    animation: bookentry 2.1s ease-out forwards  ;
+}
+
+.book {
+     position:absolute; 
+    width: 27%;
+    bottom: -9px;
+    left: 40%;
+    z-index: 10;
+    animation-delay: 1.5s;
+}
+
+@keyframes bookentry {
+    from{
+        transform: translatex(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0);
+        opacity: 1;
+    }
+
+}
+
+
+
+@media (max-width: 570px){
+    
     .banner h1{
-        font-size: 32px;
+        font-size: 32px;                    
     }
 
     .banner h4{
         font-size: 16px;
-        padding: 0 10px;
+        padding: 0 ;
+        line-height: 1.7;
+        max-width: 320px;
+        margin: 20px auto;
     }
 
     .button{
         width:auto
     }
+
+
+    .banner{
+        padding:40px 15px 140px;
+        min-height:auto;
+    }
+
+    .table{
+        bottom:-13px;
+    }
+
+    .flowercup{
+        width:37%;
+        left:-13%;
+        bottom:10px;
+    }
+
+    .teacup{
+        width:20%;
+        left:4.5%;
+        bottom:19px;
+    }
+
+    .book{
+        width:35%;
+        left:35%;
+        bottom:-4px;
+    }
+
+    .nidle{
+        width:20%;
+        right:-5%;
+        bottom:30px;
+        animation: nidleentry 2.3s ease-out forwards ;
+    }
+
+    .laptop{
+        width:42%;
+        right:5%;
+        bottom:23px;
+    }
+
+    .skill{
+        width:24px;
+    }
+
+    .html{left:52%; top:62%;}
+    .css{left:60%; top:58%;}
+    .js{left:66%; top:63%;}
+    .bs{left:72%; top:70%;}
+    .git{left:58%; top:72%;}
+    .jquery{left:67%; top:76%;}
+
+
+    .footer p{
+    font-size:30px;
+    line-height:1.6;
+    max-width:100%;
+    margin:0 auto;
+    text-align:center;
+    padding: 0 8px;
 }
+}
+
+
 
 
 
