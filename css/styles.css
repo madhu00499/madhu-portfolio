@@ -6,10 +6,10 @@
      background-image: url(../images/background.png);
      background-size: cover;
      background-repeat:no-repeat;
-     padding: 300px 20px 250px;
+     padding: 170px 20px 220px;
      position: relative;
      overflow: hidden;
-     min-height: 600px;
+     min-height: 100vh;
 }    
 
 .banner h1{
